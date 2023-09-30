@@ -1,15 +1,59 @@
-# VotePoll-Backend
-Our online voting system, backed by blockchain technology, revolutionizes the democratic process by ensuring security, transparency, and convenience. The system comprises three main components: a citizen registration interface, a user-friendly voting website, and a comprehensive admin panel.
+# Votepoll Backend
 
--- Citizen registration:
-The citizen registration interface utilizes cutting-edge face recognition technology powered by face-api.js. This ensures accurate and secure registration of citizens, adding an extra layer of authentication and preventing duplicate registrations.
+## Description
 
--- VotePoll-Website:
-Registered users can then access the voting website, where they can securely log in and cast their votes. The blockchain technology underlying the system guarantees tamper-proof and immutable records, ensuring the integrity and transparency of the voting process. This empowers citizens to participate in elections from the comfort of their own homes, enhancing accessibility and convenience.
+This project serves as the backend component of the Votepoll system, aiming to provide a robust and secure platform for online voting management. It is built using Node.js, Express, and MongoDB, with various dependencies to enhance functionality.
 
--- VotePoll-AdminPanel:
-The admin panel serves as the central hub for election management. Administrators have full control over the system, with the ability to open elections, monitor real-time vote counts retrieved from the blockchain, and publish results securely. They can also effortlessly manage parties, candidates, and constituencies by adding, updating, deleting, and viewing relevant information. This streamlines administrative tasks and ensures accurate representation throughout the electoral process.
+## Features
 
-With our online voting system, citizens can exercise their voting rights with confidence, knowing that their votes are securely stored on the blockchain. The face recognition-based registration process adds an extra layer of security, preventing fraudulent activities. Meanwhile, the admin panel empowers administrators to efficiently manage elections, ensuring transparency and facilitating informed decision-making.
+- **Authentication:** Secure user authentication with JSON Web Tokens (JWT) and bcrypt for password hashing.
+- **API Endpoints:** Implement API endpoints for user registration, authentication, and voting operations.
+- **Data Storage:** Utilize MongoDB for data storage and management.
+- **Error Handling:** Implement error handling and logging for robustness.
+- **Email Notifications:** Send email notifications using Nodemailer for user interaction.
+- **Middleware:** Use middleware packages like Body Parser, CORS, and Morgan to enhance server functionality.
 
-Experience the future of voting with our state-of-the-art online voting system backed by blockchain, providing a secure, user-friendly, and transparent platform for democratic participation.
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies with `npm install`.
+3. Set up environment variables using a `.env` file (refer to `.env.example`).
+4. Start the development server with `npm run dev`.
+5. Access the API via `http://localhost:PORT`, where `PORT` is the configured port (default is 3000).
+
+## Project Structure
+
+- `index.js`: Entry point for the Node.js application.
+- `routes/`: Contains route definitions for various API endpoints.
+- `models/`: Defines MongoDB schema and models.
+- `controllers/`: Implements logic for API endpoints.
+
+## Dependencies
+
+- Node.js
+- Express
+- MongoDB
+- Bcrypt
+- JSON Web Tokens (JWT)
+- Nodemailer
+- Day.js
+- Multer
+- Morgan
+- Body Parser
+- CORS
+- Dotenv
+- Email Validator
+
+## Scripts
+
+- `npm run dev`: Start the development server with nodemon.
+- `npm test`: Run tests (add test scripts as needed).
+- `npm start`: Start the production server.
+
+## License
+
+- This project is licensed under the [ISC License](LICENSE).
+
+## Contact
+
+- For questions or support, please contact Muhammad Zeeja at muhammadzeejah1122@gmail.com.
